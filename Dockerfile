@@ -10,3 +10,4 @@ COPY entrypoint.sh /usr/bin/qtunnel-entrypoint.sh
 RUN chmod +x /usr/bin/qtunnel-entrypoint.sh
 
 ENTRYPOINT ["qtunnel-entrypoint.sh"]
+EXPOSE 35838
