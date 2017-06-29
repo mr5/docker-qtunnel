@@ -7,6 +7,6 @@ RUN apk add --no-cache make git && \
     cd .. && rm -rf qtunnel && \
     apk del make git
 COPY entrypoint.sh /usr/bin/qtunnel-entrypoint.sh
-
+RUN chmod +x /usr/bin/qtunnel-entrypoint.sh
 
 ENTRYPOINT ["qtunnel-entrypoint.sh"]
