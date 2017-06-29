@@ -1,5 +1,5 @@
 FROM golang:1.8.3-alpine
-MAINTAINER Yuanhai He <i@bestmike007.com>
+MAINTAINER Dyson woo <mr5.simple@gmail.com>
 RUN apk add --no-cache make git && \
     cd && git clone https://github.com/getqujing/qtunnel.git qtunnel && \
     cd qtunnel && make && \
